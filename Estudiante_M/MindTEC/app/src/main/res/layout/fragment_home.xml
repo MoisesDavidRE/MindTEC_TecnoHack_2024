@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.test.TestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0D9247"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:gravity="start"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/encabezadoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0D9247"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserratmedium"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="Moisés David R. E."
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="4dp"
+                android:text="En el cuestionario hay una lista de síntomas comunes de la ansiedad. Lea cada uno de los ítems atentamente, e indique cuánto le ha afectado en la última semana incluyendo hoy."
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 1 -->
+            <TextView
+                android:id="@+id/tvQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Torpe o entumecido"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 1 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 2 -->
+            <TextView
+                android:id="@+id/tvQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Acalorado"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 1 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con temblor en las piernas"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option120"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option130"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Incapaz de relajarse"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 5 -->
+            <TextView
+                android:id="@+id/tvQuestion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con temor a que ocurra lo peor"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion116"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Mareado, o que se le va la cabeza"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion116"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option124"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option125"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con latidos del corazón fuertes y acelerados"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Inestable"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Atemorizado o asustado"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Nervioso"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con sensación de bloqueo"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con temblores en las manos"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Inquieto, inseguro"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con miedo a perder el control"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con sensación de ahogo "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option157"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con temor a morir"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con miedo"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con problemas digestivos"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con desvanecimientos"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option76"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con rubor facial"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Pregunta 3 -->
+            <TextView
+                android:id="@+id/tvQuestion21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Con sudores, fríos o calientes"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Opciones de la Pregunta 3 -->
+            <RadioGroup
+                android:id="@+id/rgQuestion21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leve"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option83"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moderado"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbQuestion1Option84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bastante"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- Separador visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#E0E0E0" />
+
+
+            <!-- Botón Enviar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0D9247"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:text="Enviar"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

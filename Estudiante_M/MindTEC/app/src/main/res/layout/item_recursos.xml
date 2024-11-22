@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/card_background"
+
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:clipToPadding="false"
+    tools:ignore="WebViewLayout">
+
+    <TextView
+        android:id="@+id/titulo_recurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/primaryColor"
+        android:fontFamily="@font/montserratmedium"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Título del recurso"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <WebView
+        android:id="@+id/video_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000"
+        android:clipToOutline="true"
+        android:layout_marginBottom="8dp"
+        tools:ignore="WebViewLayout" />
+
+
+</LinearLayout>
